@@ -8,7 +8,7 @@ namespace Template.Controllers
 {
     public class PricingController : Controller
     {
-        public IActionResult Index()
+        public IActionResult PricingIndex()
         {
             return View();
         }

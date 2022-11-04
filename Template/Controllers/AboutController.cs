@@ -8,7 +8,7 @@ namespace Template.Controllers
 {
     public class AboutController : Controller
     {
-        public IActionResult Index()
+        public IActionResult AboutIndex()
         {
             return View();
         }

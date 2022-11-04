@@ -8,7 +8,7 @@ namespace Template.Controllers
 {
     public class ContactController : Controller
     {
-        public IActionResult Index()
+        public IActionResult ContactIndex()
         {
             return View();
         }

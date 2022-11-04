@@ -8,7 +8,7 @@ namespace Template.Controllers
 {
     public class BlogController : Controller
     {
-        public IActionResult Index()
+        public IActionResult BlogIndex()
         {
             return View();
         }

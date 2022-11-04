@@ -8,7 +8,7 @@ namespace Template.Controllers
 {
     public class TeamController : Controller
     {
-        public IActionResult Index()
+        public IActionResult TeamIndex()
         {
             return View();
         }

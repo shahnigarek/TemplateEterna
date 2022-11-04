@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Template.Controllers
 {
-    public class PortoflioController : Controller
+    public class PortfolioController : Controller
     {
-        public IActionResult Index()
+        public IActionResult PortfolioIndex()
         {
             return View();
         }
