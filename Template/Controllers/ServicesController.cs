@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Template.DAL;
+using Template.ViewModels;
 
 namespace Template.Controllers
 {
@@ -16,7 +17,15 @@ namespace Template.Controllers
         }
         public IActionResult ServicesIndex()
         {
-            return View();
+            ServiceVM serviceVM = new ServiceVM
+            {
+                SServices = _context.SServices.ToList(),
+                Facilities = _context.Facilities.ToList()
+            };
+            
+            
+            return View(serviceVM);
+
         }
     }
 }

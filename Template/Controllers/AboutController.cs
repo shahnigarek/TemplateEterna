@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Template.DAL;
+using Template.ViewModels;
 
 namespace Template.Controllers
 {
@@ -16,7 +17,16 @@ namespace Template.Controllers
         }
         public IActionResult AboutIndex()
         {
-            return View();
+            AboutVM aboutVM = new AboutVM
+            {
+              
+                AboutDescriptions = _context.AboutDescriptions.ToList(),
+                Logos = _context.Logos.ToList(),
+                FeedBacks=_context.FeedBacks.ToList(),
+
+
+            };
+            return View(aboutVM);
         }
     }
 }

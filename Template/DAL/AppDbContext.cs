@@ -17,7 +17,6 @@ namespace Template.DAL
         public DbSet<AboutDescription> AboutDescriptions  { get; set; }
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Category> Categories  { get; set; }
-        public DbSet<Clients>  Clients   { get; set; }
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Facility> Facilities { get; set; }
         public DbSet<Featured> Featureds { get; set; }
@@ -32,7 +31,6 @@ namespace Template.DAL
         public DbSet<Slider> Sliders{ get; set; }
         public DbSet<SServices> SServices{ get; set; }
         public DbSet<Team> Teams { get; set; }
-        public DbSet<Testimonials> Testimonials { get; set; }
 
 
 

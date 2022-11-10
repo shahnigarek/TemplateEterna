@@ -1,4 +1,5 @@
-﻿<main id="main">
+﻿@model ContactVM
+<main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
@@ -17,7 +18,7 @@
         <div class="container">
 
             <div class="row">
-            @foreach(Contact contact in Model)
+            @foreach(Contact contact in Model.Contacts)
             {
                 <div class="col-lg-6">
                     <div class="info-box mb-4">

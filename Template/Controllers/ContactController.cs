@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Template.DAL;
 using Template.Models;
+using Template.ViewModels;
 
 namespace Template.Controllers
 {
@@ -18,8 +19,12 @@ namespace Template.Controllers
         }
         public IActionResult ContactIndex()
         {
+            ContactVM contactVM = new ContactVM
+            {
+                Contacts = _context.Contacts.ToList()
+            };
 
-            return View();
+            return View(contactVM);
         }
     }
 }
